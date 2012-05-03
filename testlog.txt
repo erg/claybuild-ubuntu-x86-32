@@ -1,4 +1,53 @@
 
+[math/libm]
+Failure: compiler error
+Error:
+ 
+ ###############################
+ inline overload call(ptr:ExternalCodePointer[CC, false, [..In], [..Out]], ..args:A) =
+     ..callExternalCodePointer(ptr,
+         ..mapValues2((arg, T) => cCast(arg, T), #countValues(..A), ..args, ..In));
+ --------------------------------------^
+ 
+ [CC, ..In, ..Out]
+ ###############################
+ /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/pointers/pointers.clay(259,38): error: no matching overload found
+     /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/pointers/pointers.clay(253,0)
+         pattern "#F" did not match type "Static[Int32]" of argument 2
+     /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/pointers/pointers.clay(250,0)
+         pattern "#Pointer[CChar]" did not match type "Static[Int32]" of argument 2
+     /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/pointers/pointers.clay(247,0)
+         predicate "CCastable?(F, T)" failed
+     79 universal overloads not shown (show with -full-match-errors option)
+ 
+ compilation context: 
+     cCast(Int64, Static[Int32])
+   /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/pointers/pointers.clay(259,38):
+     ((arg, T) => cCast(arg, T))(Int64, Static[Int32])
+   /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/values/values.clay(160,16):
+     mapValues2(Static[((arg, T) => cCast(arg, T))], Static[1], Int64, Static[Int32])
+   /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/pointers/pointers.clay(259,20):
+     call(ExternalCodePointer[AttributeCCall, false, [Int32], [Int32]], Int64)
+   /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/math/libm/libm.clay(23,39):
+     abs(Int64)
+   /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/pointers/pointers.clay(285,21):
+     CodePointer[[Int64], [Int64]](Static[abs])
+   /home/erg/clay-autobuild/test/math/libm/test.clay(47,25):
+     Array[CodePointer[[Int64], [Int64]], 1](CodePointer[[Int64], [Int64]])
+   /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/arrays/arrays.clay(219,55):
+     array(CodePointer[[Int64], [Int64]])
+   /home/erg/clay-autobuild/test/math/libm/test.clay(47,23):
+     evalFuncs(Array[CodePointer[[Int64], [Int64]], 1], Array[Int64, 7])
+   /home/erg/clay-autobuild/test/math/libm/test.clay(87,13):
+     main()
+   /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/system/system.clay(22,30):
+     getExitCode()
+   /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/system/system.clay(22,26):
+     runMain(Int32, Pointer[Pointer[Int8]], Static[main])
+   /home/erg/clay-autobuild/build/compiler/src/../../../lib-clay/core/system/system.clay(32,13):
+     callMain(Static[main], Int32, Pointer[Pointer[Int8]])
+     external main
+
 [externals/abi/x86_sse]
 Failure: out.txt mismatch
 Diff-Stdout:
@@ -8,7 +57,7 @@ Diff-Stdout:
   
   Passing C arguments to Clay:
  -Vec[Int64, 2](1234605616436508552l, 3694171492931115434l), Vec[Float32, 4](0x1.112232p+99f, 0x1.223344p+88f, 0x1.334454p+77f, 0x1.445566p+66f), Vec[Float64, 2](0x1.1122334455667p+99, 0x1.2233445566778p+88)
- +Vec[Int64, 2](7939328l, 0l), Vec[Float32, 4](0x0.000000p+0f, 0x0.000000p+0f, 0x0.000000p+0f, 0x0.000000p+0f), Vec[Float64, 2](0x0.0000000000000p+0, 0x0.0000000000000p+0)
+ +Vec[Int64, 2](13539872l, 0l), Vec[Float32, 4](0x0.000000p+0f, 0x0.000000p+0f, 0x0.000000p+0f, 0x0.000000p+0f), Vec[Float64, 2](0x0.0000000000000p+0, 0x0.0000000000000p+0)
   Struct_x86_2(Vec[Int64, 2](1234605616436508552l, 3694171492931115434l))
   Struct_x86_3(Vec[Int64, 2](1234605616436508552l, 3694171492931115434l), Vec[Int64, 2](2464388554683811993l, 4923954431178418875l))
   Struct_x86_4(Vec[Float32, 4](0x1.112232p+99f, 0x1.223344p+88f, 0x1.334454p+77f, 0x1.445566p+66f))
