@@ -1,6 +1,6 @@
 [System]
 platform: Linux-3.2.0-24-generic-i686-with-Ubuntu-12.04-precise
-version: jckarter/clay@c25920a43b4a6eed816a3cbb62b0b35801b3aa8d (2012-05-04 13:43:38 -0700)
+version: jckarter/clay@2ec74b9e6b836cc84421be8a3be5a87ab762ccd0 (2012-05-04 14:16:28 -0700)
 repository: https://github.com/jckarter/clay
 
 [SystemUname]
@@ -38,7 +38,7 @@ shootout/insertionsort1: ok
 shootout/mean: ok
 callbyname/arg: ok
 callbyname/fileLineColumn: ok
-math/libm: compiler error
+math/libm: ok
 math/complex: ok
 math/sqrt: ok
 math/native: ok
@@ -319,15 +319,14 @@ values/1: ok
 any: ok
 
 [Failed]
-math/libm: compiler error
 externals/abi/x86_sse: out.txt mismatch
 externals/abi/common: out.txt mismatch
 
 [Summary]
-Passed: 294
+Passed: 295
 Disabled: 4
-Failed: 3
+Failed: 2
 
 # Test log written to testlog.txt
 
-time-taken-seconds: 940.414173
+time-taken-seconds: 947.038495
