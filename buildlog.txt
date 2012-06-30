@@ -16,8 +16,8 @@ Building CXX object compiler/src/CMakeFiles/clay.dir/clone.cpp.o
 [ 66%] Building CXX object compiler/src/CMakeFiles/clay.dir/main.cpp.o
 [ 70%] Building CXX object compiler/src/CMakeFiles/clay.dir/matchinvoke.cpp.o
 [ 75%] Building CXX object compiler/src/CMakeFiles/clay.dir/objects.cpp.o
-[ 79%] [ 83%] Building CXX object compiler/src/CMakeFiles/clay.dir/parachute.cpp.o
-Building CXX object compiler/src/CMakeFiles/clay.dir/parser.cpp.o
+[ 79%] Building CXX object compiler/src/CMakeFiles/clay.dir/parachute.cpp.o
+[ 83%] Building CXX object compiler/src/CMakeFiles/clay.dir/parser.cpp.o
 [ 87%] Building CXX object compiler/src/CMakeFiles/clay.dir/patterns.cpp.o
 [ 91%] Building CXX object compiler/src/CMakeFiles/clay.dir/printer.cpp.o
 [ 95%] Building CXX object compiler/src/CMakeFiles/clay.dir/profiler.cpp.o
