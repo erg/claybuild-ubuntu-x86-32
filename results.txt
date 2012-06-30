@@ -1,6 +1,6 @@
 [System]
 platform: Linux-3.2.0-24-generic-i686-with-Ubuntu-12.04-precise
-version: jckarter/clay@9b1c404fbef365840c9bb36c99dee59f0bc3c0fd (2012-05-04 18:06:51 -0700)
+version: jckarter/clay@eade4bb9e6caa55c3be86a18801fddee1b18ca6b (2012-06-28 10:25:02 -0700)
 repository: https://github.com/jckarter/clay
 
 [SystemUname]
@@ -305,6 +305,7 @@ computedrecords/customproperty: ok
 computedrecords/2: ok
 simd: ok
 simd/invalidtypes: ok
+simd/optimizationbug1: ok
 printing/nan: ok
 printing/1: ok
 printing/formatting: ok
@@ -323,10 +324,10 @@ externals/abi/x86_sse: out.txt mismatch
 externals/abi/common: out.txt mismatch
 
 [Summary]
-Passed: 295
+Passed: 296
 Disabled: 4
 Failed: 2
 
 # Test log written to testlog.txt
 
-time-taken-seconds: 957.526312
+time-taken-seconds: 2611.527180
