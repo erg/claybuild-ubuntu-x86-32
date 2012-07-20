@@ -1,12 +1,12 @@
 [System]
 platform: Linux-3.2.0-24-generic-i686-with-Ubuntu-12.04-precise
-version: jckarter/clay@dce3a446cbddc1f84a214f037a1923dcc52dccb9 (2012-06-30 18:33:12 -0700)
+version: jckarter/clay@1b4101cb85e534408fefb6f3b7275f27eaa3e35c (2012-07-19 19:27:21 -0700)
 repository: https://github.com/jckarter/clay
 
 [SystemUname]
 system: Linux
 machine: i686
-version: #37-Ubuntu SMP Wed Apr 25 08:43:52 UTC 2012
+version: #39-Ubuntu SMP Mon May 21 16:51:22 UTC 2012
 release: 3.2.0-24-generic
 processor: i686
 
@@ -330,4 +330,4 @@ Failed: 2
 
 # Test log written to testlog.txt
 
-time-taken-seconds: 7094.943863
+time-taken-seconds: 1098.040222
