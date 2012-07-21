@@ -1,6 +1,6 @@
 [System]
 platform: Linux-3.2.0-24-generic-i686-with-Ubuntu-12.04-precise
-version: jckarter/clay@1b4101cb85e534408fefb6f3b7275f27eaa3e35c (2012-07-19 19:27:21 -0700)
+version: jckarter/clay@d80918751234755d431bf647e1c44ca8e6abc4fa (2012-07-21 15:44:22 -0700)
 repository: https://github.com/jckarter/clay
 
 [SystemUname]
@@ -264,6 +264,7 @@ queues: ok
 fileio/29: ok
 fileio/28: ok
 fileio/27: ok
+claydoc: ok
 exceptions/1: ok
 exceptions/finally: ok
 exceptions/finally/goto: ok
@@ -324,10 +325,10 @@ externals/abi/x86_sse: out.txt mismatch
 externals/abi/common: out.txt mismatch
 
 [Summary]
-Passed: 296
+Passed: 297
 Disabled: 4
 Failed: 2
 
 # Test log written to testlog.txt
 
-time-taken-seconds: 1098.040222
+time-taken-seconds: 1155.955211
