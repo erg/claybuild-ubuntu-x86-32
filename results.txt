@@ -1,6 +1,6 @@
 [System]
 platform: Linux-3.2.0-24-generic-i686-with-Ubuntu-12.04-precise
-version: jckarter/clay@89c873567d986bf12cba9f498de3ba8a01325272 (2012-07-21 16:51:14 -0700)
+version: jckarter/clay@5acc635e6646832319911b199788bb8957649d7c (2012-07-29 08:26:27 -0700)
 repository: https://github.com/jckarter/clay
 
 [SystemUname]
@@ -85,6 +85,7 @@ sequences/arrayinitialization: ok
 sequences/predicates: ok
 sequences/staticsized: ok
 parsing: ok
+parsing/combinators/generic: ok
 parsing/calculator: ok
 lambdas/mono: ok
 lambdas/papply: ok
@@ -325,10 +326,10 @@ externals/abi/x86_sse: out.txt mismatch
 externals/abi/common: out.txt mismatch
 
 [Summary]
-Passed: 297
+Passed: 298
 Disabled: 4
 Failed: 2
 
 # Test log written to testlog.txt
 
-time-taken-seconds: 1084.466496
+time-taken-seconds: 1125.311505
